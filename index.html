@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <title>Favourite Books</title>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+   <div class="container">
+
+      <!-- books search area  -->
+      <form class="col-md-6 m-auto py-5">
+
+         <div class="input-group mb-3">
+
+            <input id="book-name" type="text" class="form-control" placeholder="Search your favourite  books ...">
+            <div class="input-group-append">
+               <button onclick="searchBook()" type="button" class="btn btn-danger">Search</button>
+
+            </div>
+         </div>
+      </form>
+
+      <!--books search results -->
+      <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+
+
+      </div>
+
+   </div>
+   <script src="main.js"></script>
+</body>
+
+</html>
