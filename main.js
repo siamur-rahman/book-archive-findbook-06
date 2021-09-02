@@ -17,6 +17,8 @@ searchBtn.addEventListener("click", function () {
       return;
    }
    searchInput.value = "";
+   BookContainer.innerHTML = " ";
+
    const url = `https://openlibrary.org/search.json?q=${search}`;
    fetch(url)
       .then((res) => res.json())
