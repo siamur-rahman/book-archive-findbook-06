@@ -8,8 +8,7 @@ const errorDiv = document.getElementById("error");
 
 searchBtn.addEventListener("click", function () {
    const search = searchInput.value;
-
-
+   //error handling
    if (search === "") {
       errorDiv.innerText = "Search field cannot be empty.";
       //   Clear
@@ -18,8 +17,6 @@ searchBtn.addEventListener("click", function () {
       return;
    }
    searchInput.value = "";
-
-
    const url = `https://openlibrary.org/search.json?q=${search}`;
    fetch(url)
       .then((res) => res.json())
@@ -27,7 +24,6 @@ searchBtn.addEventListener("click", function () {
 });
 
 const showData = bookArray => {
-
    {
       //error handling
       if (bookArray.numFound === 0) {
@@ -37,10 +33,8 @@ const showData = bookArray => {
       else {
          errorDiv.innerText = "";
       }
-
       const docs = bookArray.docs;
       BookNumbers.innerText = `Search results : ${docs.length}`;
-
       docs.forEach((item) => {
          const div = document.createElement("div");
          div.classList.add("col-md-3");
