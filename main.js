@@ -52,7 +52,8 @@ const showData = bookArray => {
               class=" py-2 d-flex justify-content-between align-items-center d-md-block text-md-center">
             <div class="card-body"> 
             <h2 class="card-title">Title:${item.title}</h2>
-            <h5 class="card-title">author: ${item.author_name}</h5>  
+            <h5 class="card-title">author: ${item.author_name}</h5> 
+            <h5 class="card-title">publisher: ${item.publisher}</h5>
             <p class="card-text">first published: ${item.first_publish_year}</p>
             </div>   
             `;
